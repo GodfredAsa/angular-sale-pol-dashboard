@@ -1,0 +1,18 @@
+<div class="text-gray-500 border border-[#E6E7EB] rounded-xl">
+  <table class="w-full text-sm text-left rtl:text-right ">
+    <thead class="text-xs uppercase">
+        <tr class="bg-[#E6E7EB]">
+            <th scope="col" class="px-6 py-3" *ngFor="let item of tableHeaders"> {{item}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="bg-white hover:bg-[#fafafa]" *ngFor="let product of rowElements">
+            <th scope="row" class="px-6 py-4 ">  {{product.productName}} </th>
+            <td class="px-6 py-4"> {{product.color}}</td>
+            <td class="px-6 py-4">  {{product.category}} </td>
+            <td class="px-6 py-4">  {{product.price}} </td>
+
+        </tr>
+    </tbody>
+  </table>
+</div>

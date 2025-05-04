@@ -1,0 +1,23 @@
+<div class="bg-[#ffffff] border rounded-xl overflow-hidden">
+  <div class="px-2 pt-1 pb-2">
+    <div class="flex justify-between">
+      <div>
+        <small  class="text-[#727272]">{{title}}</small>
+        <h2 class="text-center m-auto text-3xl  pt-3">${{amount}}</h2>
+      </div>
+      <div class="mt-2 pt-8">
+        <small [ngClass]="
+          {
+            'bg-[#e1fbe6] text-[#54a25a]': isProgress,
+            'bg-[#fdecea] text-[#e53935]': !isProgress
+          }"
+          class="p-2 rounded-md"> {{ rate }}%
+        </small>
+      </div>
+    </div>
+  </div>
+
+  <div class="w-full px-2 py-1 bg-[#fafafa] text-[#83888d]">
+    <small>From {{startDate}} - {{endDate}}</small>
+  </div>
+</div>
