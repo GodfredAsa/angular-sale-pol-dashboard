@@ -3,12 +3,15 @@
     <img src="https://cbx-prod.b-cdn.net/COLOURBOX34008302.jpg?width=800&height=800&quality=70" class="w-16 rounded-full mx-2" alt="">
     <div class="pt-4">
       <p>
-        Brandon Rosser
+        Brandon <span class="sm:hidden md:inline">Rosser</span>
         <button (click)="isDropdownOpened = !isDropdownOpened">
           <i class="bi bi-chevron-down"></i>
         </button>
       </p>
-      <small>Admin</small>
+        <custom-tag
+          [name]="'Superman'"
+          [cssClasses]="'bg-[#04A1A0] p-1 text-white rounded-md'">
+        </custom-tag>
     </div>
   </div>
 

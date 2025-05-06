@@ -14,6 +14,8 @@ export class BarChartComponent implements OnInit {
 
   @ViewChild("chart") chart?: ChartComponent;
 
+  @Input() chartTitle: string;
+
   @Input() series: ApexAxisChartSeries = [];
   @Input() type: "bar" | "column" = "bar";
   @Input() stacked: boolean = false;

@@ -14,6 +14,7 @@ export class PieChartComponent implements OnInit {
 
   @ViewChild("chart") chart?: ChartComponent;
 
+  @Input() chartTitle: string = "";
   @Input() series: ApexNonAxisChartSeries = [];
   @Input() labels: string[] = [];
   @Input() type: "pie" | "donut" = "donut";
