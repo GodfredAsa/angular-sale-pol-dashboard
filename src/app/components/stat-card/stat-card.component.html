@@ -2,14 +2,14 @@
   <div class="px-2 pt-1 pb-2">
     <div class="flex justify-between">
       <div>
-        <small  class="text-[#727272]">{{title}}</small>
+        <small  class="text-[#727272] uppercase">{{title}}</small>
         <h2 class="text-center m-auto text-3xl  pt-3">${{amount}}</h2>
       </div>
       <div class="mt-2 pt-8">
         <small [ngClass]="
           {
-            'bg-[#e1fbe6] text-[#54a25a]': isProgress,
-            'bg-[#fdecea] text-[#e53935]': !isProgress
+            'bg-[#e1fbe6] text-[#5aaa68] font-extrabold': isProgress,
+            'bg-[#fdecea] text-[#cb292b] font-extrabold': !isProgress
           }"
           class="p-2 rounded-md"> {{ rate }}%
         </small>

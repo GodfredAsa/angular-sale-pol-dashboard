@@ -88,17 +88,31 @@
 
      </div>
 
-     <!-- <app-pie-chart></app-pie-chart> -->
      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-7">
       <div class="col-span-2 border border-[#F0F1F3] rounded-xl">
        <div class="relative overflow-x-auto">
-        <img src="https://docs.oracle.com/en/database/oracle/apex/24.2/htmdb/img/sample_charts.png" class="rounded-xl" alt="">
+        <app-bar-chart
+          [series]="[{ name: 'Stock', data: [30, 40, 35, 50, 49, 60] }, { name: 'Sales', data: [20, 30, 25, 40, 39, 50] }]"
+          [type]="'bar'"
+          [colors]="['#046564', '#04a1a0']"
+          [stacked]="true"
+          [categories]="['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']"
+          [legend]="{ position: 'bottom', horizontalAlign: 'center' }"
+          [fillOpacity]="0.1">
+        </app-bar-chart>
        </div>
       </div>
-
         <div class="border border-[#F0F1F3] rounded-xl">
-         <img src="https://financetrain.sgp1.cdn.digitaloceanspaces.com/27411-chart-2.png" class="rounded-xl" alt="">
-         <!-- <h2>Bar charts</h2> -->
+         <app-pie-chart
+            [series]="[44, 55, 13, 43, 22]"
+            [labels]="['Shoes', 'Scandals', 'Shirts', 'Jeans', 'Tops']"
+            [type]="'donut'"
+            [radius]="500"
+            height="'300'"
+            [donutHoleSize]="'65%'"
+            [colors]="['#455a64', '#63af70', '#e17e7e', '#046564', '#04a1a0']"
+            [legend]="{ position: 'bottom', horizontalAlign: 'center' }">
+          </app-pie-chart>
         </div>
 
     </div>

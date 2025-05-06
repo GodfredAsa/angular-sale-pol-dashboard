@@ -17,7 +17,7 @@ export class SidebarComponent {
 
   otherNavElements: any = [
     {name: 'Extensions', to: '/', iconClass: 'bi bi-columns-gap'},
-    {name: 'Affiliate Programs', to: '/', iconClass: 'bi bi-copy',  number: 3},
+    {name: 'Affiliate Programs', to: '/', iconClass: 'bi bi-files',  number: 3},
     {name: 'Upgrade', to: '/', iconClass: 'bi bi-cpu'},
   ]
 
