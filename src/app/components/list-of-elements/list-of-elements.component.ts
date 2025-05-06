@@ -8,8 +8,8 @@ import { Component, Input } from '@angular/core';
 export class ListOfElementsComponent {
 
   @Input() tableHeaders: string[] = []
-  // productName, color, Category, price
   @Input() rowElements: any = []
+  @Input() tableTitle: string;
   @Input() onClick?: () => void;
 
 

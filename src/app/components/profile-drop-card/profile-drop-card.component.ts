@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-profile-drop-card',
+  selector: 'profile-drop-card',
   templateUrl: './profile-drop-card.component.html',
   styleUrls: ['./profile-drop-card.component.css']
 })

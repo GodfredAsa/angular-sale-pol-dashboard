@@ -1,4 +1,7 @@
-<apx-chart
+<div>
+  <h2 class="text-[#727272] uppercase px-3 py-2 text-sm">{{chartTitle}}
+  </h2>
+  <apx-chart
   #chart
   [series]="chartOptions.series"
   [chart]="chartOptions.chart"
@@ -7,3 +10,5 @@
   [colors]="chartOptions.colors"
   [legend]="chartOptions.legend"
 ></apx-chart>
+
+</div>

@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
 export class StatCardComponent {
   @Input() title: string = '';
   @Input() amount: Number = 0.00;
-  @Input() rate: number = 0.00;
+  @Input() rate: number | string;
   @Input() startDate: string = '';
   @Input() endDate: string = '';
   @Input() isProgress: boolean =  false;

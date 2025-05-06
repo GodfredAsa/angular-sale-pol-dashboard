@@ -3,23 +3,23 @@
   <!-- Header -->
   <div class="flex m-4 mt-8">
     <img src="https://cdn4.vectorstock.com/i/1000x1000/53/93/charts-and-graphs-logo-design-economic-business-vector-28235393.jpg" class="w-12 h-10 rounded-sm" alt="">
-    <h2 class="mx-4 text-xl font-extrabold pt-1">Salespol</h2>
+    <h2 class="mx-4 text-3xl font-extrabold pt-3 uppercase text-[#046564] ">Salespol</h2>
   </div>
 
   <!-- Scrollable content area -->
   <div class="px-3 py-4 overflow-y-auto" style="height: calc(100vh - 96px);">
-    <app-nav-el
+    <nav-el
       [mainHeader]="'General'"
       [navElements]="navElements">
-    </app-nav-el>
+    </nav-el>
 
-    <app-nav-el
+    <nav-el
       [mainHeader]="'Other Tools'"
       [navElements]="otherNavElements">
-    </app-nav-el>
-    <app-nav-el
+    </nav-el>
+    <nav-el
       [mainHeader]="'Support'"
       [navElements]="supportNavElements">
-    </app-nav-el>
+    </nav-el>
   </div>
 </aside>

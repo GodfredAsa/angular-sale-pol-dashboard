@@ -12,6 +12,7 @@ import { PieChartComponent } from './components/pie-chart/pie-chart.component';
 import { ProfileDropCardComponent } from './components/profile-drop-card/profile-drop-card.component';
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { BarChartComponent } from './components/bar-chart/bar-chart.component';
+import { CustomTagComponent } from './components/custom-tag/custom-tag.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { BarChartComponent } from './components/bar-chart/bar-chart.component';
     PieChartComponent,
     ProfileDropCardComponent,
     BarChartComponent,
+    CustomTagComponent,
   ],
   imports: [
     BrowserModule,
