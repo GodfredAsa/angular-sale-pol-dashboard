@@ -18,7 +18,7 @@ export class PieChartComponent implements OnInit {
   @Input() series: ApexNonAxisChartSeries = [];
   @Input() labels: string[] = [];
   @Input() type: "pie" | "donut" = "donut";
-  @Input() radius: number = 380;
+  @Input() radius: number = 280;
   @Input() donutHoleSize: string = "50%";
   @Input() colors: string[] = [];
   @Input() legend: ApexLegend = {
