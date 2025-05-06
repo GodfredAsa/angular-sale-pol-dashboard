@@ -1,21 +1,25 @@
 <aside id="default-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0 bg-[#fafafa]" aria-label="Sidebar">
-  <div class="flex m-4 mt-8" >
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Eo_circle_purple_asterisk.svg/1200px-Eo_circle_purple_asterisk.svg.png" class="w-12 h-10 rounded-sm" alt="">
+
+  <!-- Header -->
+  <div class="flex m-4 mt-8">
+    <img src="https://cdn4.vectorstock.com/i/1000x1000/53/93/charts-and-graphs-logo-design-economic-business-vector-28235393.jpg" class="w-12 h-10 rounded-sm" alt="">
     <h2 class="mx-4 text-xl font-extrabold pt-1">Salespol</h2>
   </div>
-  <div class="h-full px-3 py-4 overflow-y-auto bg-[#fafafa]">
+
+  <!-- Scrollable content area -->
+  <div class="px-3 py-4 overflow-y-auto" style="height: calc(100vh - 96px);">
     <app-nav-el
       [mainHeader]="'General'"
       [navElements]="navElements">
     </app-nav-el>
 
     <app-nav-el
-    [mainHeader]="'Other Tools'"
-    [navElements]="otherNavElements">
+      [mainHeader]="'Other Tools'"
+      [navElements]="otherNavElements">
     </app-nav-el>
     <app-nav-el
-    [mainHeader]="'Support'"
-    [navElements]="supportNavElements">
+      [mainHeader]="'Support'"
+      [navElements]="supportNavElements">
     </app-nav-el>
   </div>
 </aside>

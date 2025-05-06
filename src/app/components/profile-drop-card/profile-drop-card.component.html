@@ -1,0 +1,24 @@
+<div class="text-sm relative">
+  <div class="flex text-sm">
+    <img src="https://cbx-prod.b-cdn.net/COLOURBOX34008302.jpg?width=800&height=800&quality=70" class="w-16 rounded-full mx-2" alt="">
+    <div class="pt-4">
+      <p>
+        Brandon Rosser
+        <button (click)="isDropdownOpened = !isDropdownOpened">
+          <i class="bi bi-chevron-down"></i>
+        </button>
+      </p>
+      <small>Admin</small>
+    </div>
+  </div>
+
+  <!-- Dropdown -->
+  <div *ngIf="isDropdownOpened" class="absolute right-0 mt-2 z-10 bg-white divide-y rounded-lg shadow-sm w-44 border-[#e6e7eb]">
+    <ul class="py-2 text-sm border border-[#e6e7eb] rounded-xl">
+      <li *ngFor="let item of profileNavElements">
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100"><i class="{{item.icon}}"></i> {{item.name}}</a>
+      </li>
+
+    </ul>
+  </div>
+</div>

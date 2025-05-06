@@ -8,6 +8,10 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { StatCardComponent } from './components/stat-card/stat-card.component';
 import { NavElComponent } from './components/nav-el/nav-el.component';
 import { ListOfElementsComponent } from './components/list-of-elements/list-of-elements.component';
+import { PieChartComponent } from './components/pie-chart/pie-chart.component';
+import { ProfileDropCardComponent } from './components/profile-drop-card/profile-drop-card.component';
+import { NgApexchartsModule } from 'ng-apexcharts';
+import { BarChartComponent } from './components/bar-chart/bar-chart.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +21,14 @@ import { ListOfElementsComponent } from './components/list-of-elements/list-of-e
     StatCardComponent,
     NavElComponent,
     ListOfElementsComponent,
+    PieChartComponent,
+    ProfileDropCardComponent,
+    BarChartComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgApexchartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
